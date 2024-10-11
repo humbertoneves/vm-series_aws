@@ -1,0 +1,12 @@
+The following steps should be followed before deploying the Terraform code presented here.
+
+Deploy Panorama e.g. by using Panorama example
+Prepare device group, template, template stack in Panorama
+Download and install plugin sw_fw_license for managing licenses
+Configure bootstrap definition and license manager
+Configure license API key
+Configure security rules and NAT rules for outbound traffic
+Configure interface management profile to enable health checks from GWLB
+Configure network interfaces and subinterfaces, zones and virtual router in template
+Configure static routes with path monitoring
+Configure VPC peering between VPC with Panorama and VPC with VM-Series in autoscaling group (after deploying that example)
